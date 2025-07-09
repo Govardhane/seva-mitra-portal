@@ -2,6 +2,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, CheckCircle, Users, Clock, Shield } from "lucide-react";
 
+// Import images
+import cscLogo from "@/assets/csc-logo.png";
+import digitalServicesHero from "@/assets/digital-services-hero.jpg";
+import cscOffice from "@/assets/csc-office.jpg";
+import techBackground from "@/assets/tech-background.jpg";
+
 const Index = () => {
   const services = [
     "आधार कार्ड नोंदणी व अपडेट / Aadhaar Enrollment & Update",
@@ -34,14 +40,24 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen gradient-bg">
+    <div className="min-h-screen gradient-bg relative">
+      {/* Background Image */}
+      <div 
+        className="fixed inset-0 opacity-5 z-0"
+        style={{
+          backgroundImage: `url(${techBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      ></div>
       {/* Header */}
-      <header className="glass-effect sticky top-0 z-50 border-b border-white/20">
+      <header className="glass-effect sticky top-0 z-50 border-b border-white/20 relative">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center animate-pulse-slow">
-                <Users className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden bg-white p-1">
+                <img src={cscLogo} alt="CSC Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gradient">कृष्णा CSC सेंटर</h1>
@@ -58,8 +74,17 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 animate-pulse-slow"></div>
-        <div className="container mx-auto text-center relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 animate-pulse-slow z-10"></div>
+        {/* Hero Background Image */}
+        <div 
+          className="absolute inset-0 opacity-20 z-0"
+          style={{
+            backgroundImage: `url(${digitalServicesHero})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
+        <div className="container mx-auto text-center relative z-20">
           <div className="max-w-4xl mx-auto">
             <div className="animate-float">
               <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-6">
@@ -86,7 +111,7 @@ const Index = () => {
       </section>
 
       {/* Features */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 relative z-10">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="text-center hover-scale gradient-card border-0 shadow-xl">
@@ -121,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">
@@ -150,7 +175,7 @@ const Index = () => {
       </section>
 
       {/* Notice */}
-      <section className="py-16 px-4 bg-gradient-to-r from-warning/10 to-accent/10">
+      <section className="py-16 px-4 bg-gradient-to-r from-warning/10 to-accent/10 relative z-10">
         <div className="container mx-auto">
           <Card className="max-w-4xl mx-auto gradient-card border-0 shadow-2xl">
             <CardHeader>
@@ -183,7 +208,7 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/5 to-secondary/5">
+      <section className="py-20 px-4 bg-gradient-to-r from-primary/5 to-secondary/5 relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">
@@ -228,8 +253,8 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <div className="inline-flex items-center space-x-4 gradient-card rounded-2xl p-8 shadow-2xl hover-scale">
-              <div className="w-20 h-20 gradient-primary rounded-full flex items-center justify-center animate-pulse-slow">
-                <Users className="w-10 h-10 text-white" />
+              <div className="w-20 h-20 rounded-full flex items-center justify-center bg-white p-2">
+                <img src={cscLogo} alt="CSC Logo" className="w-full h-full object-contain" />
               </div>
               <div className="text-left">
                 <h3 className="text-2xl font-bold text-gradient">कृष्णा CSC सेंटर</h3>
