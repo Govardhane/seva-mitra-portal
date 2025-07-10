@@ -60,8 +60,8 @@ const Index = () => {
                 <img src={cscLogo} alt="CSC Logo" className="w-full h-full object-contain" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gradient">कृष्णा CSC सेंटर</h1>
-                <p className="text-sm text-muted-foreground">Krishna CSC Center</p>
+                <h1 className="text-2xl font-bold text-gradient">Krishna Jivan Govardhane</h1>
+                <p className="text-sm text-muted-foreground">CSC Center Operator</p>
               </div>
             </div>
             <Button 
@@ -264,13 +264,13 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-12">
-            <div className="inline-flex items-center space-x-4 gradient-card rounded-2xl p-8 shadow-2xl hover-scale">
-              <div className="w-20 h-20 rounded-full flex items-center justify-center bg-white p-2">
-                <img src={cscLogo} alt="CSC Logo" className="w-full h-full object-contain" />
+            <div className="inline-flex items-center space-x-6 gradient-card rounded-2xl p-8 shadow-2xl hover-scale">
+              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20">
+                <img src="/lovable-uploads/ac6c80b2-c895-4f87-81e4-6559dcf19061.png" alt="Krishna Jivan Govardhane" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
-                <h3 className="text-2xl font-bold text-gradient">कृष्णा CSC सेंटर</h3>
-                <p className="text-muted-foreground text-lg">Krishna CSC Center</p>
+                <h3 className="text-2xl font-bold text-gradient">Krishna Jivan Govardhane</h3>
+                <p className="text-muted-foreground text-lg">CSC Center Operator</p>
                 <p className="text-sm text-accent font-semibold">✅ Authorized CSC Service Provider</p>
               </div>
             </div>
