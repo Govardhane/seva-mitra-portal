@@ -36,7 +36,62 @@ const Index = () => {
     "CSC TEC सर्टिफिकेट प्रशिक्षण व नोंदणी",
     "आयडी कार्ड, फोटो, प्रिंटआउट, स्कॅनिंग, लॅमिनेशन",
     "Resume / CV / Visiting Card Design",
-    "PM Digital Literacy Mission (PMGDISHA)"
+    "PM Digital Literacy Mission (PMGDISHA)",
+    
+    // केंद्र सरकारच्या नवीन योजना / New Central Government Schemes
+    "प्रधानमंत्री मुद्रा योजना / PM Mudra Loan",
+    "प्रधानमंत्री कुसुम योजना / PM Kusum Solar Scheme",
+    "प्रधानमंत्री श्रम योगी मानधन योजना / PM-SYM Pension",
+    "प्रधानमंत्री किसान मानधन योजना / PM Kisan Maandhan",
+    "प्रधानमंत्री जीवन ज्योती बीमा योजना / PM Jeevan Jyoti",
+    "प्रधानमंत्री सुरक्षा बीमा योजना / PM Suraksha Bima",
+    "अटल पेन्शन योजना / Atal Pension Yojana",
+    "प्रधानमंत्री जन औषधी योजना / PM Jan Aushadhi",
+    "स्वच्छ भारत मिशन ग्रामीण / Swachh Bharat Mission",
+    "प्रधानमंत्री गरीब कल्याण अन्न योजना / PM Garib Kalyan Anna",
+    "प्रधानमंत्री ग्राम सड़क योजना / PM Gram Sadak Yojana",
+    "डिजिटल इंडिया अभियान / Digital India Campaign",
+    "मेक इन इंडिया / Make in India",
+    "स्टार्टअप इंडिया / Startup India Registration",
+    "स्टैंड अप इंडिया / Stand Up India Scheme",
+    "स्किल इंडिया मिशन / Skill India Mission",
+    "बेटी बचाओ बेटी पढ़ाओ / Beti Bachao Beti Padhao",
+    "सुकन्या समृद्धि योजना / Sukanya Samriddhi Yojana",
+    
+    // राज्य सरकारच्या योजना / State Government Schemes
+    "महात्मा ज्योतिबा फुले जन आरोग्य योजना / Mahatma Jyotiba Phule Scheme",
+    "शिव भोजन योजना / Shiv Bhojan Yojana",
+    "श्रमिक सुरक्षा योजना / Shramik Suraksha Yojana",
+    "महाराष्ट्र कृषि पंप कनेक्शन योजना / Maharashtra Krishi Pump",
+    "नांदेड़ वाटर ग्रिड योजना / Nanded Water Grid",
+    "महाराष्ट्र सौर उर्जा नीति / Maharashtra Solar Energy Policy",
+    "महाराष्ट्र वन विकास निगम / Maharashtra Forest Development",
+    "महाराष्ट्र रोजगार हमी योजना / Maharashtra Employment Guarantee",
+    "अन्नपूर्णा योजना / Annapurna Yojana",
+    "स्वाधार योजना / Swadhar Yojana",
+    "कन्या भाग्यश्री योजना / Kanya Bhagyashree Yojana",
+    "राजश्री योजना / Rajshri Yojana",
+    "वारकरी सेवा योजना / Warkari Seva Yojana",
+    "कृषी विद्युत कनेक्शन / Agriculture Electricity Connection",
+    
+    // शिक्षण संबंधित सेवा / Education Related Services
+    "शाळेत प्रवेश / School Admission",
+    "शिष्यवृत्ती अर्ज / Scholarship Applications",
+    "मी शिक्षण शिष्यवृत्ती / Mi Shikshan Scholarship",
+    "EBC शिष्यवृत्ती / EBC Scholarship",
+    "OBC शिष्यवृत्ती / OBC Scholarship",
+    "अनुसूचित जाती शिष्यवृत्ती / SC Scholarship",
+    "अनुसूचित जमाती शिष्यवृत्ती / ST Scholarship",
+    
+    // अन्य महत्वाच्या सेवा / Other Important Services
+    "कोविड व्हॅक्सिनेशन सर्टिफिकेट / Covid Vaccination Certificate",
+    "आयुर्वेद डॉक्टर ऑनलाइन सल्ला / Ayurveda Doctor Online",
+    "टेली मेडिसिन सेवा / Tele Medicine Services",
+    "कृषी सल्ला सेवा / Agriculture Advisory Services",
+    "हवामान माहिती / Weather Information Services",
+    "गोरगरीब योजना / Gor Garib Yojana",
+    "जल जीवन मिशन / Jal Jeevan Mission",
+    "उज्ज्वला गॅस कनेक्शन / Ujjwala Gas Connection"
   ];
 
   return (
@@ -265,8 +320,8 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <div className="inline-flex items-center space-x-6 gradient-card rounded-2xl p-8 shadow-2xl hover-scale">
-              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20">
-                <img src="/lovable-uploads/ac6c80b2-c895-4f87-81e4-6559dcf19061.png" alt="Krishna Jivan Govardhane" className="w-full h-full object-cover" />
+              <div className="w-24 h-24 rounded-full flex items-center justify-center bg-primary/10 border-4 border-primary/20">
+                <Users className="w-12 h-12 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="text-2xl font-bold text-gradient">Krishna Jivan Govardhane</h3>
